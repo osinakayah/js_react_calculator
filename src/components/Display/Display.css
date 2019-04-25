@@ -1,0 +1,15 @@
+.Display{
+    background-color: #444;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    position: relative;
+}
+
+.Result {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
