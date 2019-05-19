@@ -18,13 +18,21 @@ class App extends Component {
     }
     handleClick = (buttonName) => {
         const calculator = calculate(this.state.calculator, buttonName);
-        console.log(calculator);
         this.setState(calculator);
     }
+    _renderValueToDisplay = () => {
+        if (this.state.calculator.operation === '=' ) {
+            return this.state.calculator.total ? this.state.calculator.total.toString() : "";
+        }
+        else {
+            return this.state.calculator.next ? this.state.calculator.next.toString(): ""
+        }
+    }
   render() {
+        console.log(this.state.calculator)
     return (
       <div className="App">
-        <Display result={this.state.calculator.total !== null ? this.state.calculator.total :  this.state.calculator.next} />
+        <Display result={this._renderValueToDisplay()} />
         <ButtonPanel clickHandler={this.handleClick}/>
       </div>
     );

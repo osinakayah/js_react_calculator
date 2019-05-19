@@ -1,5 +1,6 @@
 import operate from './operate'
-export function calculate (calculator, buttonName) {
+
+export function calculate(calculator, buttonName) {
 
     switch (buttonName) {
         case 'AC':
@@ -13,26 +14,27 @@ export function calculate (calculator, buttonName) {
         case '/':
             calculator.operation = '/'
             calculator.total = calculator.next;
-            calculator.next = 0
+            calculator.next = ""
             break;
         case 'X':
             calculator.operation = 'X'
             calculator.total = calculator.next;
-            calculator.next = 0
+            calculator.next = ""
             break
         case '-':
             calculator.operation = '-'
             calculator.total = calculator.next;
-            calculator.next = 0
+            calculator.next = ""
             break
         case '+':
             calculator.operation = '+'
             calculator.total = calculator.next;
-            calculator.next = 0
+            calculator.next = ""
             break
         case '=':
             calculator.total = operate(calculator.total, calculator.next, calculator.operation);
-            calculator.next = 0
+            calculator.next = ""
+            calculator.operation = '='
             break;
         default:
             calculator.next === null ? calculator.next = buttonName : calculator.next = calculator.next + buttonName
