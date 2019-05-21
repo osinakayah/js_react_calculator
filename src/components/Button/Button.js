@@ -4,7 +4,7 @@ import './Button.css'
 
 const Button = props => (
     <div onClick={() => props.handleClick(props.name)} className={'Button'}
-         style={{backgroundColor: props.color, width: props.wide ? '49.7%' : '24.7%'}}>
+         style={{backgroundColor: props.color, width: props.wide ? '48%' : '24%'}}>
         {props.name}
     </div>
 )
