@@ -1,19 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types'
 import './Button.css'
 
-class Button extends Component{
-    handleClick = () => {
-        this.props.handleClick(this.props.name)
-    }
-    render() {
-        return (
-            <div onClick={this.handleClick} className={'Button'} style={{backgroundColor: this.props.color, width: this.props.wide ? '49.7%' : '24.7%'}}>
-                {this.props.name}
-            </div>
-        )
-    }
-}
+const Button = props => (
+    <div onClick={() => props.handleClick(props.name)} className={'Button'}
+         style={{backgroundColor: props.color, width: props.wide ? '49.7%' : '24.7%'}}>
+        {props.name}
+    </div>
+)
 
 Button.propTypes = {
     name: PropTypes.string.isRequired,

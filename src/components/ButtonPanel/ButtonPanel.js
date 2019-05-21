@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './ButtonPanel.css'
 import Button from "../Button/Button";
 import PropTypes from "prop-types";
 
-class ButtonPanel extends Component{
+class ButtonPanel extends Component {
     render() {
         return (
             <div className={'ButtonPanel'}>

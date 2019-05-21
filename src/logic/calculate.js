@@ -1,7 +1,6 @@
 import operate from './operate'
 
 export function calculate(calculator, buttonName) {
-
     switch (buttonName) {
         case 'AC':
             calculator.total = null;

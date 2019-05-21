@@ -20,6 +20,6 @@ export default function operate(numberOne, numberTwo, operation) {
     }
   }
   catch (e) {
-    alert("Invalid Number")
+    return e.message.substring(8);
   }
 }
