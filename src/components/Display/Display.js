@@ -7,11 +7,7 @@ const Display = props => (<div className={'Display'}>
 </div>)
 
 Display.propTypes = {
-    result: PropTypes.string,
-}
-
-Display.defaultProps = {
-    result: "0.00",
+    result: PropTypes.string.isRequired,
 }
 
 export default Display

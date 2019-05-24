@@ -5,16 +5,13 @@ import ButtonPanel from "../ButtonPanel/ButtonPanel";
 import {calculate} from "../../logic/calculate";
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            calculator: {
-                total: null,
-                next: null,
-                operation: null
-            }
+    state = {
+        calculator: {
+            total: null,
+            next: null,
+            operation: null
         }
-    }
+    };
 
     handleClick = (buttonName) => {
         this.setState(prevState => calculate(this.state.calculator, buttonName))
@@ -30,6 +27,7 @@ class App extends Component {
     }
 
     render() {
+        console.log(this.state.calculator);
         return (
             <div className="App">
                 <Display result={this._renderValueToDisplay()}/>
