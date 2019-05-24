@@ -36,6 +36,10 @@ export function calculate(calculator, buttonName) {
             calculator.operation = '='
             break;
         default:
+            if (isNaN(calculator.total)) {
+                calculator.total = null;
+            }
+
             calculator.next === null ? calculator.next = buttonName : calculator.next = calculator.next + buttonName
     }
     return calculator;

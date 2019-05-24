@@ -4,7 +4,7 @@ import './Button.css'
 
 const Button = props => (
     <div onClick={() => props.handleClick(props.name)} className={'Button'}
-         style={{backgroundColor: props.color, width: props.wide ? '48%' : '24%'}}>
+         style={{backgroundColor: props.color || '#e89353', width: props.wide ? '48%' : '24%'}}>
         {props.name}
     </div>
 )
@@ -14,10 +14,6 @@ Button.propTypes = {
     color: PropTypes.string,
     wide: PropTypes.bool,
     handleClick: PropTypes.func
-}
-
-Button.defaultProps = {
-    color: "#e89353",
 }
 
 export default Button;
