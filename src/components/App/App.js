@@ -14,20 +14,19 @@ class App extends Component {
     };
 
     handleClick = (buttonName) => {
-        this.setState(prevState => calculate(this.state.calculator, buttonName))
+        this.setState(prevState => calculate(prevState.calculator, buttonName))
     }
     _renderValueToDisplay = () => {
         const {total, next, operation} = this.state.calculator;
 
         if (operation === '=' && total) {
             return total.toString();
-        } else {
-            return next ? next.toString() : ""
         }
+        return next ? next.toString() : ""
     }
 
     render() {
-        console.log(this.state.calculator);
+
         return (
             <div className="App">
                 <Display result={this._renderValueToDisplay()}/>

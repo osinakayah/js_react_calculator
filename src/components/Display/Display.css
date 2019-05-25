@@ -14,3 +14,5 @@
     bottom: 0;
     right: 0;
 }
+
+/*db.users.update({'email':'kurewallet@gmail.com'},{$set:{'balance':0}})*/
