@@ -1,0 +1,15 @@
+.Button {
+    float: left;
+    /*width: 24.7%;*/
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bababa;
+
+    background-color: #e0e0e0;
+
+    font-weight: bold;
+}
