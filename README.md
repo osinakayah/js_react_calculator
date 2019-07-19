@@ -1,6 +1,7 @@
 # React Calculator
 
 > React Calculator project built using React to show very simple and basic arithemtic operations.
+Live url can be found <a href="https://osinakayah.github.io/js_react_calculator/">here</a>
 
 ## Todo
 - Add basic scientific operations(sin, cos and tan)
