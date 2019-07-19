@@ -1,26 +1,20 @@
-# js_react_calculator
+# React Calculator
 
-> A Calculator project built using React.
+> React Calculator project built using React to show very simple and basic arithemtic operations.
 
+## Todo
+- Add basic scientific operations(sin, cos and tan)
 
-
-## Table of Contents
-
-- [js_react_calculator](#bjs_react_calculator)
-  - [Table of Contents](#table-of-contents)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Maintainers](#maintainers)
+## Tech Stacks
+- React
+- CSS
   
-  ## Install
-
-Follow these steps:
-  - clone this repo
-  - `cd js_react_calculator`
-  - `yarn install` or `npm install`
+## Install
+- Clone this repo
+- `cd js_react_calculator`
+- `yarn install` or `npm install`
 
 ## Usage
-
 ```
 yarn start
 ```
